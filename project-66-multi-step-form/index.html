@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-step Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Multi-step Form</h1>
+    </header>
+    <main>
+      <form id="multi-step-form">
+        <div class="step step-1">
+          <h2>Step 1</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <button type="button" class="next">Next</button>
+        </div>
+        <div class="step step-2 hidden">
+          <h2>Step 2</h2>
+          <label for="address">Address:</label>
+          <input type="text" id="address" required />
+          <label for="city">City:</label>
+          <input type="text" id="city" required />
+          <button type="button" class="prev">Previous</button>
+          <button type="button" class="next">Next</button>
+        </div>
+        <div class="step step-3 hidden">
+          <h2>Step 3</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+          <button type="button" class="prev">Previous</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div id="progress">
+        <div class="progress-step active">Step 1</div>
+        <div class="progress-step">Step 2</div>
+        <div class="progress-step">Step 3</div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

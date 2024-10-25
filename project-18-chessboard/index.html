@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const chessboard = document.querySelector(".chessboard");
+        for (let i = 0; i < 8; i++) {
+          for (let j = 0; j < 8; j++) {
+            const square = document.createElement("div");
+            if ((i + j) % 2 === 0) {
+              square.classList.add("white");
+            } else {
+              square.classList.add("black");
+            }
+            chessboard.appendChild(square);
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Chessboard</h1>
+    </header>
+    <main>
+      <div class="chessboard">
+        <!-- Chessboard squares will be dynamically added here -->
+      </div>
+    </main>
+  </body>
+</html>

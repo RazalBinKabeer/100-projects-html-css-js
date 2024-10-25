@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Flashcards</h1>
+    </header>
+    <main>
+      <section id="deck-creation">
+        <h2>Create a Deck</h2>
+        <form id="deck-form">
+          <label for="deck-name">Deck Name:</label>
+          <input type="text" id="deck-name" name="deck-name" required />
+          <button type="submit">Create Deck</button>
+        </form>
+      </section>
+      <section id="flashcards">
+        <h2>Flashcards</h2>
+        <div id="card">
+          <div class="side front">Question</div>
+          <div class="side back">Answer</div>
+        </div>
+        <button id="flip-card">Flip Card</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

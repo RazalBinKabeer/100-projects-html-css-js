@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Filter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio Filter</h1>
+    </header>
+    <main>
+      <div id="filter-container">
+        <button data-filter="all">All</button>
+        <button data-filter="web">Web Design</button>
+        <button data-filter="graphic">Graphic Design</button>
+        <button data-filter="app">App Development</button>
+      </div>
+      <div id="portfolio-container">
+        <div class="portfolio-item" data-category="web">
+          <img src="https://placehold.co/600x400" alt="Web Design 1" />
+        </div>
+        <div class="portfolio-item" data-category="graphic">
+          <img src="https://placehold.co/600x400" alt="Graphic Design 1" />
+        </div>
+        <div class="portfolio-item" data-category="app">
+          <img src="https://placehold.co/600x400" alt="App Development 1" />
+        </div>
+        <div class="portfolio-item" data-category="web">
+          <img src="https://placehold.co/600x400" alt="Web Design 2" />
+        </div>
+        <div class="portfolio-item" data-category="graphic">
+          <img src="https://placehold.co/600x400" alt="Graphic Design 2" />
+        </div>
+        <div class="portfolio-item" data-category="app">
+          <img src="https://placehold.co/600x400" alt="App Development 2" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

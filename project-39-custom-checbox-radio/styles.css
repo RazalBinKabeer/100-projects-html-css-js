@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.custom-controls {
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.custom-checkbox,
+.custom-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 1em 0;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.custom-checkbox input,
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+
+.custom-radio input:checked ~ .checkmark {
+  background-color: #4caf50;
+  border-radius: 50%;
+}
+
+.custom-checkbox .checkmark:after,
+.custom-radio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}

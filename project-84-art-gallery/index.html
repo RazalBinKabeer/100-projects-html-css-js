@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Art Gallery</h1>
+      <p>Explore the beauty of art</p>
+    </header>
+
+    <section class="gallery">
+      <img
+        src="image1.jpg"
+        alt="Art Piece 1"
+        class="gallery-item"
+        onclick="openImage(this.src)"
+      />
+      <img
+        src="image2.jpg"
+        alt="Art Piece 2"
+        class="gallery-item"
+        onclick="openImage(this.src)"
+      />
+      <img
+        src="image3.jpg"
+        alt="Art Piece 3"
+        class="gallery-item"
+        onclick="openImage(this.src)"
+      />
+      <img
+        src="image4.jpg"
+        alt="Art Piece 4"
+        class="gallery-item"
+        onclick="openImage(this.src)"
+      />
+      <img
+        src="image5.jpg"
+        alt="Art Piece 5"
+        class="gallery-item"
+        onclick="openImage(this.src)"
+      />
+    </section>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close" onclick="closeLightbox()">×</span>
+      <img id="lightbox-image" src="" alt="Large View" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

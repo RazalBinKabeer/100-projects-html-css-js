@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+main {
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  margin: 1em 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#color-result {
+  margin: 1em 0;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}

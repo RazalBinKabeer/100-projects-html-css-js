@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Audio Controls</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Custom Audio Controls</h1>
+    <audio id="audio" src="your-audio-file.mp3"></audio>
+
+    <div class="audio-controls">
+      <button id="play-btn">Play</button>
+      <button id="pause-btn">Pause</button>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1" />
+      <input type="range" id="progress" value="0" step="0.1" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

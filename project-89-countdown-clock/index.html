@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="countdown-container">
+    <h1>Countdown to Event</h1>
+    <input type="datetime-local" id="event-time" placeholder="Select date and time" />
+    <button onclick="startCountdown()">Start Countdown</button>
+    <div id="countdown-display" class="countdown-display">
+      <span id="days">00</span> days
+      <span id="hours">00</span> hours
+      <span id="minutes">00</span> minutes
+      <span id="seconds">00</span> seconds
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+#filter-container {
+  margin: 2em 0;
+}
+
+#filter-container button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#filter-container button:hover {
+  background-color: #555;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 30%;
+  margin: 10px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

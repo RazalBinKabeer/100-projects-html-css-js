@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Festival</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Music Festival 2023</h1>
+      <nav>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="lineup-link">Lineup</a>
+        <a href="#" id="tickets-link">Tickets</a>
+        <a href="#" id="gallery-link">Gallery</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h2>Welcome to the Music Festival</h2>
+        <p>
+          Join us for an unforgettable experience with the best music, food, and
+          vibes.
+        </p>
+      </section>
+      <section id="lineup" class="hidden">
+        <h2>Lineup</h2>
+        <ul id="artist-list">
+          <!-- Artist details go here -->
+        </ul>
+      </section>
+      <section id="tickets" class="hidden">
+        <h2>Buy Tickets</h2>
+        <form id="ticket-form">
+          <label for="ticket-type">Ticket Type:</label>
+          <select id="ticket-type">
+            <option value="general">General Admission</option>
+            <option value="vip">VIP</option>
+          </select>
+          <button type="submit">Purchase</button>
+        </form>
+      </section>
+      <section id="gallery" class="hidden">
+        <h2>Gallery</h2>
+        <div id="gallery-content">
+          <!-- Photos and videos go here -->
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

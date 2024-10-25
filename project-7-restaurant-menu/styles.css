@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.menu {
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  margin-bottom: 1.5em;
+}
+
+.menu-item h2 {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.menu-item p {
+  margin: 0.3em 0;
+  color: #666;
+}

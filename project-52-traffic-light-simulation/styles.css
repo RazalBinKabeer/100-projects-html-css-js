@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.faq {
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:hover,
+.accordion:focus {
+  background-color: #555;
+}
+
+.panel {
+  padding: 0 1em;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: left;
+}

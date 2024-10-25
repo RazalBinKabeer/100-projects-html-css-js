@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 1em;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea,
+button {
+  margin: 0.5em 0;
+  padding: 10px;
+}
+
+#comments-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.reply-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.reply {
+  margin-left: 20px;
+}

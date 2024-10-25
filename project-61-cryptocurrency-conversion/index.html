@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cryptocurrency Converter</h1>
+    </header>
+    <main>
+      <section id="converter">
+        <h2>Convert</h2>
+        <form id="conversion-form">
+          <input type="number" id="amount" placeholder="Amount" required />
+          <select id="from-currency">
+            <option value="BTC">Bitcoin (BTC)</option>
+            <option value="ETH">Ethereum (ETH)</option>
+            <option value="LTC">Litecoin (LTC)</option>
+          </select>
+          <select id="to-currency">
+            <option value="USD">US Dollar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+          </select>
+          <button type="submit">Convert</button>
+        </form>
+        <p id="result"></p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

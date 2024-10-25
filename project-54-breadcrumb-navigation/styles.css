@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+nav {
+  background-color: #eee;
+  padding: 10px;
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li {
+  margin-right: 5px;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li::after {
+  content: "/";
+  margin-left: 5px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+  margin: 0;
+}

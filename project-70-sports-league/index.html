@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports League</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sports League</h1>
+      <nav>
+        <a href="#" id="teams-link">Teams</a>
+        <a href="#" id="schedule-link">Schedule</a>
+        <a href="#" id="players-link">Players</a>
+        <a href="#" id="standings-link">Standings</a>
+        <a href="#" id="tickets-link">Tickets</a>
+      </nav>
+    </header>
+    <main>
+      <section id="teams" class="hidden">
+        <h2>Teams</h2>
+        <ul id="team-list">
+          <!-- Team details go here -->
+        </ul>
+      </section>
+      <section id="schedule" class="hidden">
+        <h2>Schedule</h2>
+        <ul id="match-list">
+          <!-- Match details go here -->
+        </ul>
+      </section>
+      <section id="players" class="hidden">
+        <h2>Players</h2>
+        <ul id="player-list">
+          <!-- Player details go here -->
+        </ul>
+      </section>
+      <section id="standings" class="hidden">
+        <h2>Standings</h2>
+        <table id="standings-table">
+          <!-- Standings details go here -->
+        </table>
+      </section>
+      <section id="tickets" class="hidden">
+        <h2>Book Tickets</h2>
+        <form id="ticket-form">
+          <label for="match">Select Match:</label>
+          <select id="match">
+            <option value="match1">Match 1</option>
+            <option value="match2">Match 2</option>
+            <option value="match3">Match 3</option>
+          </select>
+          <button type="submit">Book</button>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

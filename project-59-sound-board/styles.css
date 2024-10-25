@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.sound-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.sound-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sound-button:hover {
+  background-color: #45a049;
+}
+
+#upload-section {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"],
+button {
+  margin: 10px 0;
+}

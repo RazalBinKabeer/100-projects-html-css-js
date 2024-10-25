@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Soundboard</h1>
+    </header>
+    <main>
+      <div class="sound-buttons">
+        <button class="sound-button" data-sound="sound1">Sound 1</button>
+        <button class="sound-button" data-sound="sound2">Sound 2</button>
+        <button class="sound-button" data-sound="sound3">Sound 3</button>
+      </div>
+      <section id="upload-section">
+        <h2>Upload Your Own Sounds</h2>
+        <form id="upload-form">
+          <input type="file" id="sound-file" accept="audio/*" required />
+          <button type="submit">Upload</button>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lightbox Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Photo Gallery</h1>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Image 1" onclick="openLightbox(0)" />
+      <img src="image2.jpg" alt="Image 2" onclick="openLightbox(1)" />
+      <img src="image3.jpg" alt="Image 3" onclick="openLightbox(2)" />
+      <img src="image4.jpg" alt="Image 4" onclick="openLightbox(3)" />
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" class="lightbox-img" alt="Large Image" />
+      <div class="lightbox-controls">
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

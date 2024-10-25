@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to EasyRent</h1>
+      <p>Your go-to car rental service</p>
+    </header>
+
+    <section id="car-selection">
+      <h2>Select Your Car</h2>
+      <div class="car">
+        <h3>Sedan</h3>
+        <p>Price: $50/day</p>
+        <button class="select-car" onclick="selectCar('Sedan', 50)">
+          Choose Sedan
+        </button>
+      </div>
+      <div class="car">
+        <h3>SUV</h3>
+        <p>Price: $80/day</p>
+        <button class="select-car" onclick="selectCar('SUV', 80)">
+          Choose SUV
+        </button>
+      </div>
+      <div class="car">
+        <h3>Convertible</h3>
+        <p>Price: $100/day</p>
+        <button class="select-car" onclick="selectCar('Convertible', 100)">
+          Choose Convertible
+        </button>
+      </div>
+    </section>
+
+    <section id="booking-form">
+      <h2>Book Your Car</h2>
+      <form id="rental-form">
+        <label for="car-type">Car Type:</label>
+        <input type="text" id="car-type" readonly />
+
+        <label for="rental-days">Number of Days:</label>
+        <input type="number" id="rental-days" min="1" value="1" />
+
+        <label for="total-price">Total Price:</label>
+        <input type="text" id="total-price" readonly />
+
+        <button type="button" onclick="calculateTotal()">
+          Calculate Total
+        </button>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

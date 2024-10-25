@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Personal Finance Manager</h1>
+    </header>
+    <main>
+      <section id="income-section">
+        <h2>Income</h2>
+        <form id="income-form">
+          <input type="text" id="income-source" placeholder="Source" required />
+          <input
+            type="number"
+            id="income-amount"
+            placeholder="Amount"
+            required
+          />
+          <button type="submit">Add Income</button>
+        </form>
+        <ul id="income-list">
+          <!-- Income items go here -->
+        </ul>
+      </section>
+      <section id="expense-section">
+        <h2>Expenses</h2>
+        <form id="expense-form">
+          <input
+            type="text"
+            id="expense-category"
+            placeholder="Category"
+            required
+          />
+          <input
+            type="number"
+            id="expense-amount"
+            placeholder="Amount"
+            required
+          />
+          <button type="submit">Add Expense</button>
+        </form>
+        <ul id="expense-list">
+          <!-- Expense items go here -->
+        </ul>
+      </section>
+      <section id="budget-section">
+        <h2>Budget</h2>
+        <form id="budget-form">
+          <input
+            type="number"
+            id="budget-amount"
+            placeholder="Monthly Budget"
+            required
+          />
+          <button type="submit">Set Budget</button>
+        </form>
+        <p id="budget-display"></p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

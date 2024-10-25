@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Voting System</h1>
+    </header>
+    <main>
+      <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+          <button type="submit">Login</button>
+        </form>
+      </section>
+      <section id="vote-section" class="hidden">
+        <h2>Cast Your Vote</h2>
+        <form id="vote-form">
+          <label for="topic">Select Topic:</label>
+          <select id="topic">
+            <option value="topic1">Topic 1</option>
+            <option value="topic2">Topic 2</option>
+            <option value="topic3">Topic 3</option>
+          </select>
+          <button type="submit">Vote</button>
+        </form>
+      </section>
+      <section id="results-section" class="hidden">
+        <h2>Voting Results</h2>
+        <div id="results"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

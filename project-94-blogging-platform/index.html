@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogging Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Blogging Platform</h1>
+    <form id="blog-form" onsubmit="addPost(event)">
+      <input type="text" id="post-title" placeholder="Post Title" required />
+      <textarea
+        id="post-content"
+        placeholder="Write your post here..."
+        required
+      ></textarea>
+      <button type="submit">Add Post</button>
+    </form>
+
+    <h2>Blog Posts</h2>
+    <div id="posts-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

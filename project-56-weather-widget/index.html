@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="weather-widget">
+      <div id="current-weather">
+        <h2>Current Weather</h2>
+        <p id="location"></p>
+        <p id="temperature"></p>
+        <p id="conditions"></p>
+      </div>
+      <div id="forecast">
+        <h2>Forecast</h2>
+        <ul id="forecast-list">
+          <!-- Forecast items go here -->
+        </ul>
+      </div>
+      <div id="search">
+        <h2>Search Weather</h2>
+        <form id="search-form">
+          <input type="text" id="city" placeholder="Enter city" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

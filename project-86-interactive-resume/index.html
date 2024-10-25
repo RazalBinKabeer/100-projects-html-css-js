@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="resume-container">
+      <h1>John Doe</h1>
+      <p>Front-End Developer</p>
+
+      <section class="resume-section">
+        <h2 onclick="toggleSection('contact-info')">Contact Information</h2>
+        <div id="contact-info" class="content">
+          <p>Email: johndoe@example.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>LinkedIn: linkedin.com/in/johndoe</p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 onclick="toggleSection('experience')">Work Experience</h2>
+        <div id="experience" class="content">
+          <p>
+            <strong>Front-End Developer</strong> - Tech Company (2020 - Present)
+          </p>
+          <ul>
+            <li>
+              Developed responsive user interfaces using HTML, CSS, and
+              JavaScript.
+            </li>
+            <li>
+              Collaborated with the design team to improve user experience.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 onclick="toggleSection('education')">Education</h2>
+        <div id="education" class="content">
+          <p>
+            <strong>B.S. in Computer Science</strong> - University of Example
+            (2016 - 2020)
+          </p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 onclick="toggleSection('skills')">Skills</h2>
+        <div id="skills" class="content">
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Redux</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 onclick="toggleSection('projects')">Projects</h2>
+        <div id="projects" class="content">
+          <ul>
+            <li>
+              <strong>Portfolio Website</strong> - Personal project showcasing
+              my work.
+            </li>
+            <li>
+              <strong>Interactive Quiz App</strong> - A web app for practicing
+              skills in various subjects.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

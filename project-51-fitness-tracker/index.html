@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fitness Tracker</h1>
+    </header>
+    <main>
+      <section id="profile">
+        <h2>Your Profile</h2>
+        <form id="profile-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" name="weight" required />
+          <button type="submit">Save Profile</button>
+        </form>
+      </section>
+      <section id="activity">
+        <h2>Activity Log</h2>
+        <form id="activity-form">
+          <label for="steps">Steps:</label>
+          <input type="number" id="steps" name="steps" required />
+          <label for="distance">Distance (km):</label>
+          <input type="number" id="distance" name="distance" required />
+          <button type="submit">Add Activity</button>
+        </form>
+        <ul id="activity-log"></ul>
+      </section>
+      <section id="nutrition">
+        <h2>Nutrition Tracker</h2>
+        <form id="nutrition-form">
+          <label for="calories">Calories:</label>
+          <input type="number" id="calories" name="calories" required />
+          <button type="submit">Add Entry</button>
+        </form>
+        <ul id="nutrition-log"></ul>
+      </section>
+      <section id="goals">
+        <h2>Goals & Achievements</h2>
+        <!-- Goals and achievements go here -->
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

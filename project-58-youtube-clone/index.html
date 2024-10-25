@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>YouTube Clone</h1>
+      <nav>
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="upload-link">Upload</a>
+        <a href="#" id="profile-link">Profile</a>
+      </nav>
+    </header>
+    <main>
+      <section id="video-list">
+        <h2>Videos</h2>
+        <ul id="videos">
+          <!-- Video items go here -->
+        </ul>
+      </section>
+      <section id="upload" class="hidden">
+        <h2>Upload Video</h2>
+        <form id="upload-form">
+          <input type="file" id="video-file" name="video-file" required />
+          <input
+            type="text"
+            id="video-title"
+            name="video-title"
+            placeholder="Title"
+            required
+          />
+          <button type="submit">Upload</button>
+        </form>
+      </section>
+      <section id="profile" class="hidden">
+        <h2>Your Profile</h2>
+        <form id="profile-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Save Profile</button>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

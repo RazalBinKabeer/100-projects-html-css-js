@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Customer Feedback Survey</h1>
+    </header>
+    <section class="survey">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="rating">Rate our service:</label>
+        <select id="rating" name="rating">
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
